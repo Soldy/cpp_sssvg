@@ -1,3 +1,5 @@
+#ifndef __CPP_SSSVG_HPP_
+#define __CPP_SSSVG_HPP_
 #include <map>
 #include <vector>
 #include <string>
@@ -95,3 +97,4 @@ class Svg{
     };
 };
 }
+#endif
