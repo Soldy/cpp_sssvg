@@ -19,11 +19,15 @@ jobs:
       run: curl https://raw.githubusercontent.com/onqtam/doctest/v2.4.9/doctest/doctest.h > doctest.h
     - name: get version
       run: clang++ -v
-    - name: compile
+    - name: compile style test
       run: clang++ -o test_style test_style.cpp -std=c++17 -Wall -Wextra
+    - name: test style
+      run: ./test_style
+    - name: compile rectangle test
+      run: clang++ -o test_rectangle test_rectangle.cpp -std=c++17 -Wall -Wextra
+    - name: test rectangle
+      run: ./test_rectangle
     - name: compile
       run: clang++ -o test test.cpp -std=c++17 -Wall -Wextra
-    - name: test_style
-      run: ./test_style
     - name: test
       run: ./test

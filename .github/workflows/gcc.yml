@@ -21,9 +21,13 @@ jobs:
       run: g++ -v
     - name: compile style test
       run: g++ -o test_style test_style.cpp
-    - name: compile
-      run: g++ -o test test.cpp -std=c++17 -Wall -Wextra
     - name: test style
       run: ./test_style
+    - name: compile rectangle test
+      run: g++ -o test_rectangle test_rectangle.cpp
+    - name: test rectangle
+      run: ./test_rectangle
+    - name: compile
+      run: g++ -o test test.cpp -std=c++17 -Wall -Wextra
     - name: test
       run: ./test
