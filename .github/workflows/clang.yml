@@ -27,6 +27,10 @@ jobs:
       run: clang++ -o test_rectangle test_rectangle.cpp -std=c++17 -Wall -Wextra
     - name: test rectangle
       run: ./test_rectangle
+    - name: compile ellipse test
+      run: clang++ -o test_ellipse test_ellipse.cpp -std=c++17 -Wall -Wextra
+    - name: test ellipse
+      run: ./test_ellipse
     - name: compile
       run: clang++ -o test test.cpp -std=c++17 -Wall -Wextra
     - name: test
