@@ -20,6 +20,10 @@ jobs:
     - name: get version
       run: clang++ -v
     - name: compile
+      run: clang++ -o test_style test_style.cpp -std=c++17 -Wall -Wextra
+    - name: compile
       run: clang++ -o test test.cpp -std=c++17 -Wall -Wextra
+    - name: test_style
+      run: ./test_style
     - name: test
       run: ./test
