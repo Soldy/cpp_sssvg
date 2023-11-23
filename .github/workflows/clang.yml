@@ -44,6 +44,6 @@ jobs:
     - name: test polygon
       run: ./test_polygon
     - name: compile
-      run: clang++ -o test test/test.cpp -std=c++17 -Wall -Wextra
+      run: clang++ -o test.bin test/test.cpp -std=c++17 -Wall -Wextra
     - name: test
-      run: ./test
+      run: ./test.bin
