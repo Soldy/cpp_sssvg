@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <string>
-#include "doctest.h"
-#include "rectangle.hpp"
+#include "../doctest.h"
+#include "../include/rectangle.hpp"
 
 
 std::string rectangle;

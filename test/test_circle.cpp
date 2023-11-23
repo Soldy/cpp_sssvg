@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <string>
-#include "doctest.h"
-#include "circle.hpp"
+#include "../doctest.h"
+#include "../include/circle.hpp"
 
 
 std::string circle;

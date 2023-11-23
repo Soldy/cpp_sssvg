@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <string>
-#include "doctest.h"
-#include "ellipse.hpp"
+#include "../doctest.h"
+#include "../include/ellipse.hpp"
 
 
 std::string ellipse;

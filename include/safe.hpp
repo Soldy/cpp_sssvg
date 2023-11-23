@@ -15,7 +15,7 @@ std::string safe_attr_list = {"\""};
 
 void safe(std::string & checked, std::string unsafe){
     for(std::string::size_type i = 0; i < checked.size(); ++i) {
-        for(int c = 0; c < unsafe.size(); c++){
+        for(std::size_t c = 0; c < unsafe.size(); c++){
             if(checked[i] == unsafe[c]){
                 checked[i] = safe_list;
             }

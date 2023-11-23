@@ -20,7 +20,7 @@ jobs:
     - name: get version
       run: g++ -v
     - name: compile style test
-      run: g++ -o test_style test_style.cpp
+      run: g++ -o test_style test/test_style.cpp
     - name: test style
       run: ./test_style
     - name: compile rectangle test
