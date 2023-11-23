@@ -23,6 +23,10 @@ jobs:
       run: g++ -o test_style test/test_style.cpp
     - name: test style
       run: ./test_style
+    - name: compile line test
+      run: g++ -o test_line test/test_line.cpp
+    - name: test line
+      run: ./test_line
     - name: compile rectangle test
       run: g++ -o test_rectangle test/test_rectangle.cpp
     - name: test rectangle
