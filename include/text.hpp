@@ -15,21 +15,13 @@ std::string text(
   int y,
   std::string text_in
 ){
-    std::map<
-      std::string,
-      std::string
-    > attr;
-    
+    std::map<std::string, std::string> attr;
     attr["x"] = std::to_string(x);
     attr["y"] = std::to_string(y);
-    return (
-      cpp_sssvg::startTag(
-        "text",
-        attr
-      )+text_in+
-      cpp_sssvg::endTag(
-        "text"
-      )
+    return cpp_sssvg::tagText(
+      "text",
+      text_in,
+      attr
     );
 };
 }
