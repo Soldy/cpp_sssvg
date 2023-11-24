@@ -7,7 +7,7 @@
 
 namespace cpp_sssvg{
 
-std::string styleCreate(
+std::string style(
   std::string color,
   int width,
   std::string fill,
@@ -27,7 +27,7 @@ std::string styleCreate(
     );
 };
 
-std::string styleCreate(
+std::string style(
   std::string color,
   int width,
   std::string fill
@@ -46,35 +46,9 @@ std::string styleCreate(
 
 std::string style(
   std::string color,
-  int width,
-  std::string fill,
-  std::string rule
-){
-    return cpp_sssvg::styleCreate(
-      color,
-      width,
-      fill,
-      rule
-    );
-};
-std::string style(
-  std::string color,
-  int width,
-  std::string fill
-){
-    return cpp_sssvg::styleCreate(
-      color,
-      width,
-      fill
-    );
-};
-
-
-std::string style(
-  std::string color,
   int width
 ){
-    return cpp_sssvg::styleCreate(
+    return cpp_sssvg::style(
       color,
       width,
       "none"
@@ -84,7 +58,7 @@ std::string style(
 std::string style(
   std::string color
 ){
-    return cpp_sssvg::styleCreate(
+    return cpp_sssvg::style(
       color,
       1,
       "none"
@@ -93,7 +67,7 @@ std::string style(
 
 
 std::string style(){
-    return cpp_sssvg::styleCreate(
+    return cpp_sssvg::style(
       "#000000",
       1,
       "none"
