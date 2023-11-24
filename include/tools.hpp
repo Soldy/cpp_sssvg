@@ -57,6 +57,38 @@ std::string endTag(std::string tag_){
      return out;
 };
 
+std::string tagText(
+  std::string tag_in_,
+  std::string text_in_
+){
+    return (
+      cpp_sssvg::startTag(
+        tag_in_
+      )+
+      text_in_+
+      cpp_sssvg::endTag(
+        tag_in_
+      )
+    );
+};
+
+std::string tagText(
+  std::string tag_in_,
+  std::string text_in_,
+  std::map<std::string, std::string> attr_
+){
+    return (
+      cpp_sssvg::startTag(
+        tag_in_,
+        attr_
+      )+
+      text_in_+
+      cpp_sssvg::endTag(
+        tag_in_
+      )
+    );
+};
+
 std::string point(
   std::string control_,
   int x,
