@@ -10,42 +10,32 @@
 
 namespace cpp_sssvg{
 
-std::string polyPointsCreate(
+std::string points(
   std::vector<
     std::array<int, 2>
-  > points
+  > points_in
 ){
     std::string out = "";
     for(
       std::string::size_type i = 0; 
-      i < points.size(); 
+      i < points_in.size(); 
       ++i
     ){
         if(i > 0)
             out += " ";
         out += (
           std::to_string(
-            points[i][0]
+            points_in[i][0]
           )+
           ","+
           std::to_string(
-            points[i][1]
+            points_in[i][1]
           )
         );
     }
     return out;
 };
 
-
-std::string points(
-  std::vector<
-    std::array<int, 2>
-  > points
-){
-    return polyPointsCreate(
-      points
-    );
-};
 }
 
 #endif
