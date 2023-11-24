@@ -51,6 +51,10 @@ jobs:
       run: g++ -o test_text test/test_text.cpp
     - name: test text
       run: ./test_text
+    - name: compile desc test
+      run: g++ -o test_desc test/test_desc.cpp
+    - name: test desc
+      run: ./test_desc
     - name: compile image test
       run: g++ -o test_image test/test_image.cpp
     - name: test image
