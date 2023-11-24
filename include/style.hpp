@@ -1,11 +1,33 @@
 #ifndef __CPP_SSSVG_STYLE_HPP_
 #define __CPP_SSSVG_STYLE_HPP_
 #include <map>
-#include <vector>
 #include <array>
 #include <string>
+#include <vector>
+#include <map>
 
 namespace cpp_sssvg{
+
+
+std::string style(
+  std::map<std::string, std::string> style_in
+){
+    std::string out = "";
+    int i = 0;
+    for (const auto& [key, value] : style_in){
+        if(i > 0)
+            out += ";";
+        out += (
+            key+
+          ":"+
+            value
+        );
+        i++;
+    }
+    return out;
+};
+
+
 
 std::string style(
   std::string color,
