@@ -59,6 +59,10 @@ jobs:
       run: g++ -o test_stop test/test_stop.cpp
     - name: test stop
       run: ./test_stop
+    - name: compile linearGradient test
+      run: g++ -o test_linearGradient test/test_linearGradient.cpp
+    - name: test linearGradient
+      run: ./test_linearGradient
     - name: compile image test
       run: g++ -o test_image test/test_image.cpp
     - name: test image
