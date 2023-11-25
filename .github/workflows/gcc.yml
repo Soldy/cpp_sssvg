@@ -23,6 +23,10 @@ jobs:
       run: g++ -o test_style test/test_style.cpp
     - name: test style
       run: ./test_style
+    - name: compile transform test
+      run: g++ -o test_transform test/test_transform.cpp
+    - name: test transform
+      run: ./test_transform
     - name: compile line test
       run: g++ -o test_line test/test_line.cpp
     - name: test line
