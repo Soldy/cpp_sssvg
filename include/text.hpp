@@ -24,6 +24,24 @@ std::string text(
       attr
     );
 };
+
+std::string text(
+  int x,
+  int y,
+  std::string style,
+  std::string text_in
+){
+    std::map<std::string, std::string> attr;
+    attr["x"] = std::to_string(x);
+    attr["y"] = std::to_string(y);
+    attr["style"] = style;
+    return cpp_sssvg::tagText(
+      "text",
+      text_in,
+      attr
+    );
+};
+
 }
 
 #endif
